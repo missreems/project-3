@@ -1,37 +1,128 @@
-# group-project
-reema
-vikram bageja lol
+![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
+
+# TechMeet
 
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #3: A MERN Stack App
-​
-## Overview
-​
-**You’ve come a long way, and it's time to show it.** This will be your most advanced project to date. It is __IMPORTANT__ to note that when we say _advanced_, the project doesn't necessarily need to have lots more functionality.
-​
-**Remember:** simple code is stable code, so always favour refactoring and bug fixing over adding more functionality.
-​
-With this in mind, you need to be smart about how you plan, limit your project scope to be achievable (in terms of functionality) and focus on quality rather than quantity.
-​
-Make sure you review your project proposal with your instructor so you can make sure it's **something you can accomplish in the limited time we have**. You will have some time after the project to add extra functionality before your Meet & Hire!
-​
----
-​
-## Technical Requirements
-​
-You must:
-​
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use an Express API** to serve your data from a Mongo database
-* **Consume your API with a separate front-end** built with React
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
-* **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
-* **Be deployed online** so it's publicly accessible.
-* **Have automated tests** for _at least_ one RESTful resource on the back-end. Improve your employability by demonstrating a good understanding of testing principals.
-​
----
-​
+## Intro
+A specialised events-finder for Tech professionals looking to find programming-based events.
+
+TechMeet is a group project created whilst studying at General Assembly in the Software Engineering Immersive. This is a MERN stack application using React for the front-end, Express and Node.js for the back-end and serving my data via a Mongo database.
+
+
+#
+## Motivation
+As new developers, we wanted to re-create the [Meet-up](https://www.meetup.com/) website but specialise it to other Tech professionals like us.
+
+During the planning stage of our project, the group agreed we wanted to use an external API within our application and use it as a key feature. We chose [Mapbox](https://www.mapbox.com/).
+
+
+#
+## Table of Contents
+- [Tech Used](##tech-used)
+- [Deployment](##deployment)
+- [Getting Started](##getting-started)
+- [Game Architecture](##game-architecture)
+- [Challenges & Future Improvements](##challenges-&-future-improvements)
+- [Creator](##creator)
+
+
+#
+## Tech used
+* MongoDB
+* Express
+* Node.js
+* JavaScript
+    * React
+    * Axios
+* SAAS
+* HTML5
+
+
+#
+## Deployment
+This web app is deployed on Heroku and it can be found here: HEROKU LINK
+
+
+## Getting Started
+Use the clone button to download the source code. In the terminal enter the following commands:
+
+```
+<!-- To install all the packages listed in the package.json: -->
+$ yarn
+<!-- Run the app in your localhost: -->
+$ yarn start
+<!-- Check the console for any issues and if there are check the package.json for any dependancies missing  -->
+```
+
+#
+## Game Architecture
+
+### Homepage
+This page highlights the core aspects of this website, like the newest content available or upcoming content like the Collections section. As this application is based on animals, animal classification links are present at the bottom of the home page.
+
+### Login & Register
+
+
+MIA-When the user lands on the website they can login using the form, if they don't have an account they can click on the 'register here' link which redirects them to the register page.
+
+### Profile
+MIA-After logging in, the user lands on their profile. Here they can see who follows them, the gems they posted and the ones they liked. From here they can also access the gems homepage and the chats homepage.
+
+### MapBox & Events Index
+This page obtains the API data for habitats and displays it through two pages:
+* Index page - displays all the habitats
+* Show page - shows each habitat with relevant information, and links to the animals living in the specific habitat
+
+### Event Show & Edit
+This page obtains the API data for animals and displays it through two pages:
+* Index page - displays all the animals and can be filtered via alphabet buttons, which refer to the initial of the animal name
+* Show page - shows each animal with relevant information, and links to the animals's habitat
+
+### Profile
+
+### Database
+A large aspect of this application is the creation of all the data, instead of using an external API. There are many models used in the backend and each model is conencted to the other models in various ways.
+
+#
+## My contributions 👩🏻‍💻
+### Project Management
+MIA-I was in charge of setting tasks and deadlines in the group. I used Trello to do this, which was very effective and meant that everyone could see what other people were working on to avoid merge conflicts. Here is a screenshot of a sample day:
+
+### 
+
+#
+## Planning
+### Back-end
+Initally, the group used Trello as a way to plan our project. However, as we got through the basic setup of our application we used daily stand-up meetings to organise work delegation and to discuss the status of each web page of our application. At the beginning of our project, we created hand-drawn wireframes:
+[HAND-DRAWN WIREFRAMES]
+
+### Front-end
+At the beginning of our project, we created hand-drawn wireframes to highlight the user experience of our application:
+[HAND-DRAWN WIREFRAMES]
+
+#
+## Testing
+As we began to build our back-end, the whole group contributed in creating automated tests for a RESTful resource on the back-end, events.
+
+#
+## Challenges & Future Improvements
+This was my first time working with Django and it was quite a learning curve for me as a lot of the functionality is covered by Django. As I started to understand the relationships between the models, the serializers, the views and the urls, Django became more and more simpler to use as I created my application. Also, this is my first project in which I have used Python as a key programming language and I really enjoyed the challenge of coding in a new language after using JavaScript in my previous projects and throughout my studying at General Assembly. 
+
+In the future, I hope to add a working search-bar on the homepage and on the navigation bar. Also, I'd like to add the additional models in my back-end like collections and the Red List scale for endangered animals, as well as creating web pages for these models.
+
+
+#
+## Creators
+- Reema Patel
+- Tom Good: [GITHUB LINK]
+- Sophie Turnell: [GITHUB LINK]
+- Vikram Bageja: https://github.com/vikram1510
+
+
+
+
+
+
 ## Necessary Deliverables
 ​
 * A **working app** hosted on the internet
@@ -45,23 +136,6 @@ You must:
     * Link to your **user stories/wireframes** – sketches of major views / interfaces in your application
     * Link to your **pitch deck/presentation** – documentation of your wireframes, user stories, and proposed architecture
     * Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
-​
----
-​
-## Suggested Ways to Get Started
-​
-* **Don’t get too caught up in too many awesome features** – simple is always better. Build something impressive that does one thing well.
-* **Design first.** Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
-* **Don’t hesitate to write throwaway code** to solve short term problems.
-* **Read the docs for whatever technologies / frameworks / API’s you use**.
-* **Write your code DRY** and **build your APIs RESTful**.
-* **Be consistent with your code style.** You're working in teams, but you're only making one app per team. Make sure it looks like a unified effort.
-* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
-* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
-* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
-* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
-* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
-* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
 ​
 ---
 ​
