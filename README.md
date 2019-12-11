@@ -4,14 +4,15 @@
 
 
 ## Intro
-A specialised events-finder for Tech professionals looking to find programming-based events.
+An events-finder specialised for Tech professionals looking to find programming-based events.
 
-TechMeet is a group project created whilst studying at General Assembly in the Software Engineering Immersive. This is a MERN stack application using React for the front-end, Express and Node.js for the back-end and serving my data via a Mongo database.
+TechMeet is a group project created whilst studying at General Assembly in the Software Engineering Immersive.This is a MERN stack application using React for the front-end, Express and Node.js for the back-end and serving my data via a MongoDB database.
 
+Duration: 1 week
 
 #
 ## Motivation
-As new developers, we wanted to re-create the [Meet-up](https://www.meetup.com/) website but specialise it to other Tech professionals like us.
+We wanted to re-create the [Meet-up](https://www.meetup.com/) website but as new developers, we wanted to specialise the app towards other Tech professionals like ourselves.
 
 During the planning stage of our project, the group agreed we wanted to use an external API within our application and use it as a key feature. We chose [Mapbox](https://www.mapbox.com/).
 
@@ -21,26 +22,26 @@ During the planning stage of our project, the group agreed we wanted to use an e
 - [Tech Used](##tech-used)
 - [Deployment](##deployment)
 - [Getting Started](##getting-started)
-- [Game Architecture](##game-architecture)
-- [Challenges & Future Improvements](##challenges-&-future-improvements)
+- [Architecture](##architecture)
+- [Challenges](##challenges)
+- [Future Improvements](##future-improvements)
 - [Creator](##creator)
 
 
 #
 ## Tech used
 * MongoDB
-* Express
-* Node.js
 * JavaScript
+    * Express
     * React
     * Axios
+* Node.js
 * SAAS
 * HTML5
 
-
 #
 ## Deployment
-This web app is deployed on Heroku and it can be found here: HEROKU LINK
+This web app is deployed on Heroku and it can be found here: https://tech-meet.herokuapp.com/
 
 
 ## Getting Started
@@ -49,8 +50,10 @@ Use the clone button to download the source code. In the terminal enter the foll
 ```
 <!-- To install all the packages listed in the package.json: -->
 $ yarn
+
 <!-- Run the app in your localhost: -->
 $ yarn start
+
 <!-- Check the console for any issues and if there are check the package.json for any dependancies missing  -->
 ```
 
@@ -59,27 +62,36 @@ $ yarn start
 
 ### Homepage
 This page highlights the core aspects of this website, like the newest content available or upcoming content like the Collections section. As this application is based on animals, animal classification links are present at the bottom of the home page.
+![Home Page](screenshots/home.png)
 
-### Login & Register
 
+### Register & Login
 
-MIA-When the user lands on the website they can login using the form, if they don't have an account they can click on the 'register here' link which redirects them to the register page.
+MIA-When the user lands on the website they can login using the form, if they don't have an account they can click on the 'register here' link which re-directs them to the register page.
+![Register](screenshots/register.png)
+![Login](screenshots/login.png)
 
-### Profile
-MIA-After logging in, the user lands on their profile. Here they can see who follows them, the gems they posted and the ones they liked. From here they can also access the gems homepage and the chats homepage.
 
 ### MapBox & Events Index
 This page obtains the API data for habitats and displays it through two pages:
 * Index page - displays all the habitats
 * Show page - shows each habitat with relevant information, and links to the animals living in the specific habitat
+![MapBox & Events Index Page](screenshots/map.png)
+
 
 ### Event Show & Edit
 This page obtains the API data for animals and displays it through two pages:
 * Index page - displays all the animals and can be filtered via alphabet buttons, which refer to the initial of the animal name
 * Show page - shows each animal with relevant information, and links to the animals's habitat
+![Event Show & Edit Page](screenshots/event-show-edit.png)
+
+### Event Create
 
 ### Profile
+MIA-After logging in, the user lands on their profile. Here they can see who follows them, the gems they posted and the ones they liked. From here they can also access the gems homepage and the chats homepage.
+![Profile Page](screenshots/profile.png)
 
+#
 ### Database
 A large aspect of this application is the creation of all the data, instead of using an external API. There are many models used in the backend and each model is conencted to the other models in various ways.
 
