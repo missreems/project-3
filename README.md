@@ -23,6 +23,14 @@ During the planning stage of our project, the group agreed we wanted to use an e
 - [Deployment](##deployment)
 - [Getting Started](##getting-started)
 - [Architecture](##architecture)
+  - [Database](###database)
+  - [Home & Vertical Navigation Sidebar](###home-&-vertical-navigation-sidebar)
+  - [Register, Login & Profile Settings](###register,-Login-&-Profile-Settings)
+  - [MapBox & Events Index](###mapbox-&-events-index)
+  - [Event Show & Edit](###event-show-&-edit)
+  - [Event Create](###event-create)
+  - [Profile](###profile)
+- [My Contributions](##my-contributions)
 - [Team Work](##team-work)
 - [Challenges](##challenges)
 - [Improvements](##future-improvements)
@@ -98,15 +106,13 @@ The Event Show page displayed further information about an event such as an even
 The Event Create page is accessible only by registered users to organise new events.
 ![Event Create](screenshots/event-create.png)
 
-
 ### Profile
 A registered user can view their Profile page to keep a track of events they have signed up for, as well as events they are hosting.
 
-Please refer to 'My contributions' below for more information.
-
+Please refer to 'My Contributions' below for more information.
 
 #
-## My contributions 👩🏻‍💻
+## My Contributions
 ### Profile
 I was responsible for the front-end of the Profile page.
 ![Profile Page](screenshots/profile.png)
