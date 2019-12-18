@@ -129,7 +129,11 @@ A challenge I faced during this project was getting the event status to appear c
 
 To set up the event status in the 'Your Events' table, I used Moment's 'isBefore()' and 'isSame()' methods, and ternary operators to differentiate between the different statuses.
 
-![Event Status Functionality](screenshots/event-status-functionality.png)
+```
+<td>{moment(event.date).format('MMM Do YYYY')} @ {moment(event.time,'HH:mm').format('h:mm A')}</td>
+
+<td>{moment().isBefore(event.date) ? 'Upcoming Event' : moment().isSame(event.date) ? 'Event Today' : 'Attended'}</td>
+```
 
 #
 ## Improvements
